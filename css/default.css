@@ -1,0 +1,419 @@
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q,
+blockquote {
+    quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+html {}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.box1 img {
+    margin: 10px 0px 10px 10px;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+
+/* CSS Reset end */
+
+.wrap {
+    max-width: 690px;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: rgba(227, 227, 227, 0.46);
+}
+
+.header {
+    position: relative;
+    height: 75px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+}
+
+.mytitle {
+    position: absolute;
+    line-height: 36px;
+    top: 30px;
+    margin: 0 7.6%;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: '標楷體';
+}
+
+@media (max-width: 768px) {
+    .mytitle {
+        font-size: 26px;
+        position: relative;
+        margin: 0 0 50px 20px;
+        width: 150px;
+    }
+    .mytitle a {
+        display: block;
+        width: 150px;
+    }
+}
+
+.menu {
+    box-shadow: 0px 0px 5px 0px #000;
+    background: #393939;
+    margin: 30px 0px 10px 0;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.menu ul {
+    margin-left: 20px;
+}
+
+.menu li {
+    border-right: 0.5px solid #969696a1;
+    float: left;
+    margin-left: 0px;
+}
+
+.menu li:last-child {
+    border-right: 0;
+}
+
+.content table {
+    display: inherit;
+    width: 50%;
+}
+
+.menu li a {
+    color: #fff;
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.menu li {
+    line-height: 30px;
+    text-align: center;
+}
+
+.menu li a:hover {
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+
+@media(max-width: 768px) {
+    .menu {
+        float: none;
+        /* 拿掉浮動 */
+        margin-bottom: 10px;
+        background: #353535e0;
+    }
+    .menu ul {
+        margin: auto;
+    }
+    .menu li {
+        width: 33.3%;
+        float: left;
+        margin: 0 auto;
+        border-radius: 3px;
+        /* float style */
+    }
+    .menu li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.content {
+    float: left;
+    width: 98%;
+    margin: 0 0 20px 50px;
+    padding: 10px;
+}
+
+.sectionti {
+    float: left;
+    margin: 0 10px 0px 10px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding: 10px;
+}
+
+.content h2,
+.sectionti h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 30px 0px 20px 40px;
+}
+
+.content p,
+.sectionti p {
+    line-height: 1.8;
+    letter-spacing: 1pt;
+    padding: 20px 0 0px 0;
+}
+
+@media(max-width: 768px) {
+    .content {
+        border: none;
+        float: none;
+        /* 拿掉浮動 */
+        width: 100%;
+        /* 百分比呈現寬度 */
+        margin: 0;
+    }
+    .content h2 {
+        text-align: center;
+        padding: 20px 0 20px 20px;
+    }
+}
+
+.footer {
+    clear: both;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #c3cacc;
+}
+
+.box1 {
+    float: left;
+    width: 25%;
+}
+
+.box2 {
+    float: right;
+    width: 65%;
+}
+
+.box2 li {
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box3 {
+    margin: 30px 0 0 10px;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box3 h3 {
+    font-size: 20px;
+}
+
+.box3 li {
+    margin: 0 0 10px 30px;
+    list-style: square;
+}
+
+hr {
+    margin: 30px 0 20px 0;
+    width: 60%;
+    text-align: left;
+}
+
+.col {
+    margin-bottom: 20px;
+}
+
+.section {
+    float: left;
+    width: 32%;
+    margin: 0 0.5% 0 1%;
+}
+
+.section2 {
+    float: left;
+    width: 32%;
+    margin: 0 0.5% 0 0.5%;
+}
+
+.section3 {
+    float: left;
+    width: 32%;
+    margin: 0 1% 0 0.5%;
+}
+
+@media(max-width: 768px) {
+    .box1 {
+        float: left;
+        width: 100%;
+    }
+    .box1 img {
+        display: block;
+        margin: auto;
+        max-width: 150px;
+    }
+    .box2 {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .section {
+        float: left;
+        width: 50%;
+        margin: auto;
+    }
+    .section2,
+    .section3 {
+        float: right;
+        width: 50%;
+        margin: auto;
+    }
+}
