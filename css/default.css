@@ -183,12 +183,17 @@ html {}
 
 .mytitle {
     position: absolute;
-    line-height: 36px;
+    line-height: 45px;
     top: 30px;
     margin: 0 7.6%;
     font-size: 26px;
     font-weight: bold;
     font-family: '標楷體';
+}
+
+.mytitle a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
 }
 
 @media (max-width: 768px) {
