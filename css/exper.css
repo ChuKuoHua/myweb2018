@@ -48,10 +48,10 @@
     margin: 60px 3% 20px 0;
 }
 
-.inn2 img,
-.inn3 img {
-    width: 150px;
-    height: 150px;
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .inn3 {
