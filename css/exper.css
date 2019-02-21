@@ -60,6 +60,14 @@ img {
     margin: 60px 3% 20px 0;
 }
 
+#wk2 a {
+    font-family: cursive;
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+    background: rgb(37, 37, 37);
+    padding: 10px;
+}
+
 p {
     text-align: inherit;
 }
